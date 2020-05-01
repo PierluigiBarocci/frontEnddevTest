@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>FronteEnd Test</title>
+</head>
+<body>
+    <div class="container">
+        <header class="clearfix">
+            <div class="header-left">
+                <p>_FRONT-END DEVELOPMENT TEST</p>
+                <h1>pierluigi <span class="font-italic">barocci</span></h1>
+                <h6>// html// css// js</h6>
+                <p id="date"></p>
+            </div>
+            <div class="header-right hidden">
+                <h6>draggable items</h6>
+                <p>Drag the items inside the box</p>
+                <div class="box-container">
+                    <div class="littleBox ml-10 first draggable" position="first"></div>
+                    <div class="littleBox ml-10 second draggable" position="second"></div>
+                    <div class="littleBox ml-10 third draggable" position="third"></div>
+                    <div class="littleBox ml-10 fourth draggable" position="fourth"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="central-section hidden">
+                <div class="gameArea">   
+                    <h6></h6>
+                </div>
+                <div class="box">
+                    <div class="userLog">
+                        <div class="userName">give me a name</div>
+                        <input type="text" id="username" placeholder="Type box name here" required>
+                        <button id="submit" type="submit">DONE</button>
+                    </div>
+                </div>
+                <div class="box scroll hidden">
+                    <div id="sortable">
+                        <div class="droppable ui-widget-header">
+                            <div class="littleSquare"></div>
+                        </div>
+                        <div class="droppable ui-widget-header">
+                            <div class="littleSquare"></div>
+                        </div>
+                        <div class="droppable ui-widget-header">
+                            <div class="littleSquare"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="standard-button">
+                <h1>CLICK HERE</h1>
+                <div>
+                    <span class="subBackMove">and start</span>
+                </div>
+            </section>
+            <section class="back-button hidden">
+                <h1>BACK</h1>
+                <div>
+                    <span id="newGame">to start</span>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

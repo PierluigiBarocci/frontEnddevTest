@@ -1,0 +1,383 @@
+/* general Styling */
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232323;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    height: calc(100vh - 40px);
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
+/* Header Styling */
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+header {
+    margin-top: 40px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    text-align: right;
+    margin-top: 30px;
+    animation: opacity 1s;
+}
+
+.box-container {
+    width: 400px;
+    margin-top: 30px;
+}
+
+.littleBox {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    cursor: move;
+    z-index: 10;
+}
+
+.ml-10 {
+    margin-left: 30px;
+}
+
+.littleBox.first {
+    background: transparent linear-gradient(228deg, #557DFF 0%, #F953FF 100%) 0% 0% no-repeat padding-box;
+}
+
+.littleBox.second {
+    background: transparent linear-gradient(45deg, #557DFF 0%, #F953FF 100%) 0% 0% no-repeat padding-box;
+}
+
+.littleBox.third {
+    background: transparent linear-gradient(225deg, #FF55EE 0%, #FF5353 100%) 0% 0% no-repeat padding-box;
+}
+
+.littleBox.fourth {
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    background: transparent linear-gradient(225deg, #FF55EE 0%, #FF5353 100%) 0% 0% no-repeat padding-box;
+}
+
+
+/* styling GameAre */
+
+main {
+    margin-top: 30px;
+}
+.central-section {
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 6px;
+    animation: opacity 1s;
+    position: relative;
+    z-index: 0;
+}
+
+.gameArea {
+    height: 350px;
+    width: 100%;
+    background: transparent linear-gradient(256deg, #557DFF 0%, #F953FF 100%);
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    border-radius: 6px;
+}
+
+.gameArea h6 {
+    line-height: 65px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.box {
+    position: absolute;
+    border-radius: 6px;
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    z-index: 1;
+}
+
+.box.scroll {
+    height: calc(100% - 65px);
+    animation: height 0.5s;
+}
+
+@keyframes height {
+    from {
+        height: calc(100% - 6px);
+    }
+
+    to {
+        height: calc(100% - 65px);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.userLog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.userName {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+button {
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    opacity: 1;
+    width: 260px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    font-weight: 100;
+}
+
+button:hover {
+    transition: 0.2s ease-in-out;
+    background-color: white;
+    color: transparent;
+    color: #33384F;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background: none;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+.long, .droppable{
+    width: 98%;
+    height: 60px;
+    margin: 24px 12px;
+    border-radius: 6px;
+}
+
+.ui-state-hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.long.first {
+    background: transparent linear-gradient(268deg, #557DFF 0%, #F953FF 100%) 0% 0% no-repeat padding-box
+}
+.long.second {
+    background: transparent linear-gradient(88deg, #557DFF 0%, #F953FF 100%) 0% 0% no-repeat padding-box;
+}
+.long.third {
+    background: transparent linear-gradient(268deg, #FF55EE 0%, #FF5353 100%) 0% 0% no-repeat padding-box;
+}
+.long.fourth {
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    background: transparent linear-gradient(268deg, #FF55EE 0%, #FF5353 100%) 0% 0% no-repeat padding-box;
+}
+
+
+/* footer animation */
+.standard-button,
+.action-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 583px;
+    cursor: pointer;
+}
+
+.action-button {
+    animation: swing 0.7s ease-in-out;
+}
+
+.back-button {
+    position: absolute;
+    animation: swingBack 0.7s ease-in-out;
+    left: 25%;
+    top: 90%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    cursor: pointer;
+}
+
+.subBackMove,
+#newGame {
+    opacity: 0;
+    font-size: 45px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    background-clip: inherit;
+    background: -webkit-linear-gradient(262deg, #557DFF 0%, #F953FF 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    position: relative;
+}
+
+.animate .subBackMove {
+    opacity: 1;
+    animation: mymove 0.3s ease-in-out;
+    left: calc(580.61px - 237.83px);
+}
+
+.turnback .subBackMove {
+    left: 0px;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#newGame {
+    text-align: right;
+}
+
+.animate #newGame {
+    opacity: 1;
+    animation: myback 0.3s ease-in-out;
+    left: 0px;
+}
+
+.turnback #newGame {
+    left: calc(580.61px - 205.61px);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.action-button h1,
+.standard-button h1 {
+    font-size: 100px;
+    line-height: 117px;
+}
+
+
+@keyframes myback {
+    from {
+        left: calc(580.61px - 205.61px);
+        opacity: 0;
+    }
+
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        left: calc(580.61px - 237.83px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes swing {
+    from {
+        left: 25%;
+        top: 90%;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes swingBack {
+    from {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    to {
+        left: 25%;
+        top: 90%;
+        opacity: 1;
+    }
+}
+
